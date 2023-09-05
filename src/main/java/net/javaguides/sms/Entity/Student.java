@@ -15,21 +15,20 @@ public class Student {
 	private int id;
 	private String first_name;
 	private String last_name;
-
+	private String gmail_id;
 	public Student() {
 		super();
 	}
 	
 	
 
-	public Student(String first_name, String last_name, String gmail_id) {
+	public Student(int id, String first_name, String last_name, String gmail_id) {
 		super();
+		this.id = id;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.gmail_id = gmail_id;
 	}
-
-
 
 	public int getId() {
 		return id;
@@ -63,6 +62,5 @@ public class Student {
 		this.gmail_id = gmail_id;
 	}
 
-	private String gmail_id;
 
 }

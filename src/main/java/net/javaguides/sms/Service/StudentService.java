@@ -5,5 +5,14 @@ import java.util.List;
 import net.javaguides.sms.Entity.Student;
 
 public interface StudentService {
-List<Student> getAllstudents();
+	
+	
+	List<Student> getAllstudents();
+	
+	Student saveStudent(Student student);
+	Student getStudentById(int id);
+	Student editStudent(Student student);
+	void deleteStudentById(int id);
+	
+	
 }
